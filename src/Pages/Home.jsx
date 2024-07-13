@@ -1,47 +1,23 @@
 import React from "react";
-import { CgFileDocument } from "react-icons/cg";
-import { PiMailboxDuotone } from "react-icons/pi";
 import Button from "../Components/Button";
 import { myProfile } from "../Data/MyData";
 function Home() {
   const myName = myProfile.name;
-  const title = myProfile.title;
-  const mail = myProfile.contact.email;
   return (
-    <div className="Home bg-LayoutBlue h-[100vh] w-full flex justify-center items-center">
-      <div className="flex-col ">
-        <div className="mb-10">
-          <div className="bg-white h-[10rem] w-[10rem] rounded-full mb-3"></div>
-          <div className="text-2xl text-white font-semibold mb-2">{myName}</div>
-          <div className="text-sm text-gray-400">{title}</div>
+    <div className="Home bg-black py-10 w-full flex justify-center items-center">
+      <div className="flex-col flex justify-center items-center ">
+        <div className="mb-6 flex flex-col justify-evenly items-center w-full">
+          <div className="profileImg bg-white h-[10rem] w-[10rem] rounded-full mb-10 shadow-[0_0px_20px_rgba(240,_46,_170,_0.7)]"></div>
+          <div className="myName text-7xl text-white font-semibold font-Lobster">
+            {myName}
+          </div>
         </div>
 
-        <div className="text-white text-justify max-w-6xl mb-10">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. At vel vero
-          quis temporibus consequuntur sed itaque facere est debitis,
-          accusantium illum consequatur, laboriosam cumque nulla voluptatem
-          voluptas! Sunt accusantium a distinctio mollitia iure hic veritatis
-          repellat impedit? Ea facere ipsa nesciunt dolores. Deleniti vero nobis
-          magnam sapiente consequatur ea velit.
-        </div>
-        <div className="text-white text-justify max-w-6xl mb-10">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. At vel vero
-          quis temporibus consequuntur sed itaque facere est debitis,
-          accusantium illum consequatur, laboriosam cumque nulla voluptatem
-          voluptas! Sunt accusantium a distinctio mollitia iure hic veritatis
-          repellat impedit? Ea facere ipsa nesciunt dolores. Deleniti vero nobis
-          magnam sapiente consequatur ea velit.
+        <div className="work text-white text-center text-2xl mb-10 w-full font-Alice">
+          I Build Things For Web
         </div>
 
-        <div className="text-white flex mb-3 items-center ">
-          {" "}
-          <PiMailboxDuotone size={22} /> <span className="ml-2">{mail}</span>
-        </div>
-        <div className="text-white flex mb-7 items-center">
-          <CgFileDocument size={20} />
-          <span className="ml-2">Resume</span>
-        </div>
-        <Button />
+        <Button text={"RESUME"} />
       </div>
     </div>
   );

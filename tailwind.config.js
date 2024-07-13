@@ -11,7 +11,12 @@ export default {
         LayoutLinkedin : "#005E93",
         LayoutMessage:"#2E7546",
         Button :"#11243C" ,
+      },
+      fontFamily: {
+        Alice :['Alice', 'serif'],
+        Lobster :['Lobster Two' , 'sans-serif']
       }
+    
     },
   },
   plugins: [],
