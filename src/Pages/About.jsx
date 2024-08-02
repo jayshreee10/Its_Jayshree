@@ -1,4 +1,5 @@
 import React from 'react'
+
 function About() {
   return (
     <div className='h-[100vh] w-full bg-black flex items-center justify-center'>
