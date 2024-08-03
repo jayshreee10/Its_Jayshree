@@ -8,6 +8,7 @@ function NavBar() {
       <div className="flex items-center  justify-end w-[50vw]">
         <LuCommand size={20} /> + K
         <div className="text-sm  font-semibold px-5">BLOG</div>
+        <div className="text-sm  font-semibold px-5">GUESTBOOK</div>
         {/* <span className="p-2 bg-pink-700 rounded-xl"><FiSun size={20}/></span> */}
       </div>
     </div>
