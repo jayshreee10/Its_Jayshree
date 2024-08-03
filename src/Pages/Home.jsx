@@ -2,14 +2,16 @@ import React from "react";
 import Button from "../Components/Button";
 import { myProfile } from "../Data/MyData";
 import jayshree from "../assets/jayshree.jpg";
+import Particles from "@/magic/magicui/particles";
 function Home() {
   const myName = myProfile.name;
   return (
-    <div className="Home  py-10 w-full flex justify-center items-center">
+    <div className="relative flex  w-full flex-col items-center justify-center overflow-hidden pb-10  bg-black md:shadow-xl">
+    <span className=" whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
       <div className="flex-col flex justify-center items-center ">
-        <div className="mb-6 flex flex-col justify-evenly items-center w-full  p-20">
+        <div className="mb-6 flex flex-col justify-evenly items-center w-full z-10 p-20">
           <div
-            className="profileImg bg-white size-[9rem] border-2 rounded-full mb-5"
+            className="profileImg bg-white size-[9rem] border-2 rounded-full "
             style={{
               backgroundImage: `url(${jayshree})`,
               backgroundPosition: "center",
@@ -22,12 +24,16 @@ function Home() {
           </div>
           <Button text={"ABOUT ME"} />
         </div>
-
-        
-
-       
       </div>
-    </div>
+    </span>
+    <Particles
+      className="absolute inset-0"
+      quantity={250}
+      ease={100}
+      color={"#000"}
+      refresh
+    />
+  </div>
   );
 }
 

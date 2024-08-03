@@ -1,18 +1,10 @@
-import React from "react";
-
+import TextReveal from "../magic/magicui/text-reveal";
 function Passion() {
   return (
-    <div className=" w-full  flex items-center justify-center">
-      <div className="text-white flex-col flex items-center justify-center ">
-        <p className="max-w-6xl text-6xl  my-10 tracking-wider leading-snug font-mono">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-          magnam numquam aut magni veritatis, similique, ipsa laborum excepturi
-          facilis deserunt nesciunt officiis perspiciatis molestiae provident
-          optio doloribus illum laudantium quae minus. Ab sint quia eum corrupti
-          dolor consequatur assumenda facere sit vel tenetur fugit est, officiis
-          sapiente voluptas magnam reprehenderit?
-        </p>
-      </div>
+    <div className="z-10  w-full flex min-h-[16rem] items-center justify-center bg-black dark:bg-black">
+      <TextReveal text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, facilis sequi, exercitationem quidem dolorem itaque deleniti harum
+      obcaecati excepturi beatae temporibus quos eius autem labore, odit." />
+     
     </div>
   );
 }
