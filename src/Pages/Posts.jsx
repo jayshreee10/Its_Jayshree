@@ -1,6 +1,7 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
-import React from "react";
+import { useNavigate } from "react-router-dom";
 function Posts() {
+  const navigate = useNavigate();
   const content = [
     {
       postTitle:
@@ -30,25 +31,27 @@ function Posts() {
         {content.map((value, index) => {
           return (
             <div key={index}>
-              <p
-                className="text-2xl font-bold text-LayoutPink leading-snug "
-               
-              >
+              <p className="text-2xl font-bold text-LayoutPink leading-snug ">
                 {value.postTitle}
               </p>
-              <p
-                className="text-lg leading-snug tracking-wide my-2"
-               
-              >
+              <p className="text-lg leading-snug tracking-wide my-2">
                 {value.postDescription}
               </p>
             </div>
           );
         })}
       </div>
-      <p className="flex items-center justify-end w-[55vw] my-28 text-lg font-semibold">
-      Read More
-       <span className="m-2"><FaLongArrowAltRight /></span> </p>
+      <p
+        className="flex items-center justify-end w-[55vw] my-28 text-lg font-semibold cursor-pointer"
+        onClick={() => {
+          navigate("/Blog/AllBlog");
+        }}
+      >
+        Read More
+        <span className="m-2">
+          <FaLongArrowAltRight />
+        </span>{" "}
+      </p>
     </div>
   );
 }

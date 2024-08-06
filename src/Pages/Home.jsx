@@ -32,13 +32,13 @@ function Home() {
           </div>
         </div>
       </span>
-      <Particles
+      {/* <Particles
         className="absolute inset-0"
         quantity={250}
         ease={100}
         color={"#000"}
         refresh
-      />
+      /> */}
     </div>
   );
 }

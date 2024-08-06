@@ -4,6 +4,7 @@ import Root from "./Pages/Root";
 import About from "./Pages/About";
 import AllBlogs from "./Pages/AllBlogs";
 import AllPlayLists from "./Pages/AllPlayLists";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/Blog/AllBlog" element={<AllBlogs />} />
         <Route path="/Spotify/AllPlaylists" element={<AllPlayLists />} />
       </Routes>
+      <Footer />
     </>
   );
 }
