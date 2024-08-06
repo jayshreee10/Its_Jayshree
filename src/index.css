@@ -93,7 +93,7 @@
   background: transparent;
 }
 
-.connect_button:before {
+.connect_button:hover:before {
   opacity: 1;
 }
 

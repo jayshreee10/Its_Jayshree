@@ -29,20 +29,20 @@ function Posts() {
         </h1>
         {content.map((value, index) => {
           return (
-            <>
+            <div key={index}>
               <p
-                className="text-2xl font-bold text-pink-700 leading-snug "
-                key={index}
+                className="text-2xl font-bold text-LayoutPink leading-snug "
+               
               >
                 {value.postTitle}
               </p>
               <p
                 className="text-lg leading-snug tracking-wide my-2"
-                key={index}
+               
               >
                 {value.postDescription}
               </p>
-            </>
+            </div>
           );
         })}
       </div>
