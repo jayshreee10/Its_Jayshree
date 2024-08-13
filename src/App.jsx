@@ -12,11 +12,11 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Root />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Blog/AllBlog" element={<AllBlogs />} />
-        <Route path="/Spotify/AllPlaylists" element={<AllPlayLists />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blog/allblog" element={<AllBlogs />} />
+        <Route path="/spotify/allplaylists" element={<AllPlayLists />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

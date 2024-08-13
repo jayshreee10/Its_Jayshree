@@ -6,10 +6,10 @@ import Spotify from './Spotify'
 function Root() {
   return (
     <>
-    <Home />
-    <Passion />
-    <Blog />
-    <Spotify />
+    {/* <Home /> */}
+    {/* <Passion /> */}
+     <Blog />
+    {/* <Spotify />  */}
     </>
   )
 }
