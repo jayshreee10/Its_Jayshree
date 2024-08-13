@@ -5,42 +5,47 @@ import { myProfile } from "../Data/MyData";
 import jayshree from "../assets/jayshree.jpg";
 
 function Home() {
+  // Destructure the name from the myProfile object
   const { name: myName } = myProfile;
+  // Initialize the navigation hook
   const navigate = useNavigate();
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full h-screen overflow-hidden bg-black pb-10 md:shadow-xl">
-      {/* Background Gradient and Text Styling */}
-      <div className="absolute inset-0  dark:from-white dark:to-slate-900/10"></div>
-      <div className="relative z-10 flex flex-col items-center justify-center w-full p-20">
-        {/* Profile Image */}
+    // Main container for the Home section
+    <div className="relative flex flex-col items-center justify-center w-full h-screen overflow-hidden bg-black md:shadow-xl">
+      {/* Background gradient (for dark mode) */}
+      <div className="absolute inset-0 dark:from-white dark:to-slate-900/10"></div>
+
+      {/* Content wrapper */}
+      <div className="relative z-10 flex flex-col items-center justify-center w-full text-center">
+        {/* Profile image */}
         <div
-          className="mb-6 bg-white border-2 rounded-full shadow-lg"
+          className="bg-white border-2 rounded-full shadow-lg "
           style={{
-            width: "9rem",
-            height: "9rem",
+            width: "12rem",
+            height: "12rem",
             backgroundImage: `url(${jayshree})`,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
         ></div>
-        {/* Name Display */}
-        <div className="text-7xl text-white font-Lobster font-semibold tracking-wider mb-5">
+
+        {/* Name display */}
+        <div className="md:text-7xl sm:text-6xl max-sm:text-4xl max-sm:w-full text-white font-Lobster font-semibold tracking-wider my-10">
           {myName}
         </div>
-        {/* About Me Button */}
-        <Button
-          text="ABOUT ME"
-          onClick={() => navigate("/About")}
-        />
+
+        {/* About Me button */}
+        <Button text="ABOUT ME" onClick={() => navigate("/About")} />
       </div>
-      {/* Uncomment to use Particles */}
+
+      {/* Particles effect for the background */}
       <Particles
         className="absolute inset-0"
         quantity={250}
-        ease={100}
-        color="#000"
+        ease={15}
+        color="#fff"
         refresh
       />
     </div>

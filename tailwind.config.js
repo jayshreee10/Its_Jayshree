@@ -19,7 +19,9 @@ module.exports = {
     extend: {
       fontFamily: {
         Alice :['Alice', 'serif'],
-        Lobster :['Lobster Two' , 'sans-serif']
+        Lobster :['Lobster Two' , 'sans-serif'],
+        Alata : [ "Alata", "sans-serif"],
+        Rubik:["Rubik", 'sans-serif']
       },
       colors: {
         LayoutBlue:"#111827",
