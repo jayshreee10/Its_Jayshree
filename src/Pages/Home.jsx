@@ -1,41 +1,55 @@
-import React from "react";
+import Particles from "@/magic/magicui/particles";
+import { useNavigate } from "react-router-dom";
 import Button from "../Components/Button";
 import { myProfile } from "../Data/MyData";
 import jayshree from "../assets/jayshree.jpg";
-import Particles from "@/magic/magicui/particles";
+
 function Home() {
-  const myName = myProfile.name;
+  // Destructure the name from the myProfile object
+  const { name: myName } = myProfile;
+  // Initialize the navigation hook
+  const navigate = useNavigate();
+
   return (
-    <div className="relative flex  w-full flex-col items-center justify-center overflow-hidden pb-10  bg-black md:shadow-xl">
-    <span className=" whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-      <div className="flex-col flex justify-center items-center ">
-        <div className="mb-6 flex flex-col justify-evenly items-center w-full z-10 p-20">
-          <div
-            className="profileImg bg-white size-[9rem] border-2 rounded-full "
-            style={{
-              backgroundImage: `url(${jayshree})`,
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-            }}
-          ></div>
-          <div className="  myName text-7xl py-5 mb-5  text-white font-semibold font-Lobster">
-            {myName}
-          </div>
-          <Button text={"ABOUT ME"} />
+    // Main container for the Home section
+    <div className="relative flex flex-col items-center justify-center w-full h-screen overflow-hidden bg-black md:shadow-xl">
+      {/* Background gradient (for dark mode) */}
+      <div className="absolute inset-0 dark:from-white dark:to-slate-900/10"></div>
+
+      {/* Content wrapper */}
+      <div className="relative z-10 flex flex-col items-center justify-center w-full text-center">
+        {/* Profile image */}
+        <div
+          className="bg-white border-2 rounded-full shadow-lg "
+          style={{
+            width: "12rem",
+            height: "12rem",
+            backgroundImage: `url(${jayshree})`,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        ></div>
+
+        {/* Name display */}
+        <div className="md:text-7xl sm:text-6xl max-sm:text-4xl max-sm:w-full text-white font-Lobster font-semibold tracking-wider my-10">
+          {myName}
         </div>
+
+        {/* About Me button */}
+        <Button text="ABOUT ME" onClick={() => navigate("/About")} />
       </div>
-    </span>
-    <Particles
-      className="absolute inset-0"
-      quantity={250}
-      ease={100}
-      color={"#000"}
-      refresh
-    />
-  </div>
+
+      {/* Particles effect for the background */}
+      <Particles
+        className="absolute inset-0"
+        quantity={250}
+        ease={15}
+        color="#fff"
+        refresh
+      />
+    </div>
   );
 }
 
 export default Home;
-// shadow-[0_0px_20px_rgba(240,_46,_170,_0.7)]

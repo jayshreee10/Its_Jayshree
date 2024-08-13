@@ -1,10 +1,18 @@
 import TextReveal from "../magic/magicui/text-reveal";
+import { myProfile } from "@/Data/MyData";
+
 function Passion() {
+  // Destructure the Passion text from the myProfile object
+  const { Passion: text } = myProfile;
+
   return (
-    <div className="z-10  w-full flex min-h-[16rem] items-center justify-center bg-black dark:bg-black">
-      <TextReveal text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, facilis sequi, exercitationem quidem dolorem itaque deleniti harum
-      obcaecati excepturi beatae temporibus quos eius autem labore, odit." />
-     
+    // Main container for the Passion section
+    <div className="w-full flex items-center justify-center bg-black dark:bg-black py-20">
+      {/* Wrapper for the text reveal component with responsive width */}
+      <span className="w-[85vw] max-md:w-full font-Rubik">
+        {/* Text reveal effect for the Passion text */}
+        <TextReveal text={text} />
+      </span>
     </div>
   );
 }
