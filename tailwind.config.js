@@ -19,14 +19,16 @@ module.exports = {
     extend: {
       fontFamily: {
         Alice :['Alice', 'serif'],
-        Lobster :['Lobster Two' , 'sans-serif']
+        Lobster :['Lobster Two' , 'sans-serif'],
+        Alata : [ "Alata", "sans-serif"],
+        Rubik:["Rubik", 'sans-serif']
       },
       colors: {
         LayoutBlue:"#111827",
         LayoutLinkedin : "#005E93",
         LayoutMessage:"#2E7546",
         Button :"#11243C" ,
-
+        LayoutPink:"#BE185D",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
