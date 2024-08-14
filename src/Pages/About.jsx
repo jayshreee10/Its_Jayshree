@@ -1,6 +1,6 @@
 import React from "react";
 import { myProfile } from "@/Data/MyData";
-
+import TechTools from "@/Components/TechTools";
 function About() {
   // Destructure the necessary data from myProfile.Aboutus
   const {
@@ -23,6 +23,7 @@ function About() {
 
       {/* Technologies the user uses */}
       <p className="text-2xl font-semibold text-LayoutPink">{techUse}</p>
+      <TechTools />
     </section>
   );
 }
