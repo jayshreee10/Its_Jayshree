@@ -7,7 +7,7 @@ function NavBar() {
 
   return (
     // Main container for the navigation bar
-    <div className="w-full bg-black flex text-white items-center justify-evenly py-10 font-Rubik">
+    <div className="fixed z-10 w-full bg-black flex text-white items-center justify-evenly py-10 font-Rubik">
       {/* Logo or brand name */}
       <div className="font-Lobster text-2xl font-extrabold">J.</div>
 

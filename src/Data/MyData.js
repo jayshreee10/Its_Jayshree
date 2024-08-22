@@ -1,8 +1,8 @@
 export const myProfile = {
   name: "Jayshree Sadangi",
-  title: "Software Developer",
+  title: "Software Developer Intern",
   location: "Berhampur, Odisha",
-  
+  company:"Embrays Technologies",
   contact: {
     phone: "+91-8260905856",
     email: "jayashreesadangi000@gmail.com",
@@ -27,10 +27,29 @@ export const myProfile = {
   ],
 
   Aboutus: {
-    intro: "I am Jayshree Sadangi, a versatile professional with a fervent passion for web development and a keen interest in emerging technologies. As a proactive problem-solver, I employ advanced coding techniques to tackle complex challenges. My background includes extensive experience in frontend development, and I am currently expanding my expertise into backend and server-side technologies. Consequently, you will often find me deeply engaged at my workstation. Alongside my coding pursuits, I am committed to enhancing my design and user interface skills. At 22, I am a graduate of Parala Maharaja Engineering College in India with a BTech degree. I have a strong interest in staying informed about current news and industry articles, and I also have a profound love for music.",
+    intro: "I am a versatile professional with a fervent passion for Web Development and a keen interest in emerging technologies. As a proactive problem-solver, I employ advanced coding techniques to tackle complex challenges. My background includes extensive experience in Frontend Development, and I am currently expanding my expertise into backend and Server-Side Technologies. Consequently, you will often find me deeply engaged at my workstation. Alongside my coding pursuits, I am committed to enhancing my design and user interface skills. At 22, I am a graduate of Parala Maharaja Engineering College in India with a BTech degree. I have a strong interest in staying informed about current news and industry articles, and I also have a profound love for music.",
     
     technologies: {
       text: "Here are a few technologies I've been working with recently:",
     },
   },
+
+  Timeline:[
+    {
+      year:"June 2024",
+      position:[
+        "job at embrays"
+      ]
+    },
+   
+    {
+      year:"August 2023 - January 2024",
+      position:["Frontend development Course at Cuvette"]
+    },
+    {
+      year:"2020-2024",
+      position:["Btech in Electrical Engineering","Parala maharaja" ]
+    },
+    
+  ]
 };
