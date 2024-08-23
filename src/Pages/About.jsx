@@ -20,8 +20,8 @@ function About() {
       {/* About Me title */}
       <p className="text-left w-[70vw] max-w-[70vw] py-10">
         <p className="text-4xl py-2">{name}</p>
-        <p className="py-2">{title}</p>
-        <p>{company}</p>
+        <p className="py-2 text-LayoutPink">{title}</p>
+        <p className="text-LayoutPink">{company}</p>
       </p>
      
 
