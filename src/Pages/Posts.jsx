@@ -3,20 +3,20 @@ import { useNavigate } from "react-router-dom";
 import { myProfile } from "@/Data/MyData";
 function Posts() {
   const navigate = useNavigate();
-  const {posts:content} = myProfile
+  const { posts: content } = myProfile;
   return (
-    <div className="bg-black w-full flex-col flex items-center  text-white py-20 font-Rubik">
-      <div className="w-[70vw] max-md:w-[80vw] flex-col flex items-start leading-relaxed py-2">
-        <h1 className="text-5xl max-sm:text-4xl font-bold tracking-wide lg:my-5 max-sm">
+    <div className="bg-black w-full flex-col flex items-center text-center text-white py-20 font-Mukta">
+      <div className="w-[70vw] max-md:w-[80vw] flex-col flex  leading-relaxed py-2">
+        <h1 className="text-5xl max-sm:text-4xl font-Alata font-bold tracking-wide lg:my-5 max-sm">
           Recent Posts
         </h1>
         {content.map((value, index) => {
           return (
             <div key={index} className="tracking-wider">
-              <p className="text-3xl font-semibold text-LayoutPink my-10 max-sm:text-2xl ">
+              <p className="text-2xl font-semibold text-LayoutPink my-10 max-sm:text-2xl ">
                 {value.postTitle}
               </p>
-              <p className="text-xl tracking-wide max-sm:text-base">
+              <p className="text-lg tracking-wide max-sm:text-base">
                 {value.postDescription}
               </p>
             </div>
@@ -29,7 +29,7 @@ function Posts() {
           navigate("/Blog/AllBlog");
         }}
       >
-        Read More 
+        Read More
         <span className="ml-2">
           <FaLongArrowAltRight />
         </span>{" "}

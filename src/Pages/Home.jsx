@@ -1,43 +1,29 @@
+import { FaLongArrowAltRight } from "react-icons/fa";
 import Particles from "@/magic/magicui/particles";
 import { useNavigate } from "react-router-dom";
-import Button from "../Components/Button";
-import { myProfile } from "../Data/MyData";
-import jayshree from "../assets/jayshree.jpg";
 
 function Home() {
-  // Destructure the name from the myProfile object
-  const { name: myName } = myProfile;
-  // Initialize the navigation hook
   const navigate = useNavigate();
 
   return (
-    // Main container for the Home section
     <div className="relative flex flex-col items-center justify-center w-full h-screen overflow-hidden bg-black md:shadow-xl">
-      {/* Background gradient (for dark mode) */}
       <div className="absolute inset-0 dark:from-white dark:to-slate-900/10"></div>
 
-      {/* Content wrapper */}
       <div className="relative z-10 flex flex-col items-center justify-center w-full text-center">
-        {/* Profile image */}
-        <div
-          className="bg-white border-2 rounded-full shadow-lg "
-          style={{
-            width: "12rem",
-            height: "12rem",
-            backgroundImage: `url(${jayshree})`,
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-        ></div>
-
-        {/* Name display */}
-        <div className="md:text-7xl sm:text-6xl max-sm:text-4xl max-sm:w-full text-white font-Lobster font-semibold tracking-wider my-10">
-          {myName}
+        <div className="md:text-7xl  lg:text-[15vw] sm:text-6xl max-sm:text-4xl max-sm:w-full text-white font-Lobster font-semibold tracking-wider">
+          Jayshree <br /> <span className="ml-[200px]">Sadangi</span>
+          <p
+            className="flex items-center justify-end text-LayoutPink tracking-wide my-28 text-xl font-semibold cursor-pointer font-Alata"
+            onClick={() => {
+              navigate("/about");
+            }}
+          >
+            About Me
+            <span className="ml-2">
+              <FaLongArrowAltRight />
+            </span>{" "}
+          </p>
         </div>
-
-        {/* About Me button */}
-        <Button text="ABOUT ME" onClick={() => navigate("/About")} />
       </div>
 
       {/* Particles effect for the background */}

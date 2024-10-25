@@ -7,7 +7,7 @@ function Spotify() {
 
   return (
     // Main container for the Spotify section
-    <div className="bg-black w-full flex flex-col items-center justify-center text-white font-Rubik">
+    <div className="bg-black w-full flex flex-col items-center  justify-center text-white font-Rubik">
       {/* Title section with responsive text size */}
       <div className="text-6xl max-sm:text-2xl font-bold m-5 p-5 tracking-wide font-Alata">
         My <span className="text-LayoutPink">Spotify</span> Top Songs

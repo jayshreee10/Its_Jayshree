@@ -1,11 +1,13 @@
 import { FcMusic } from "react-icons/fc";
 function AllPlayLists() {
   return (
-    < div className="bg-black w-full flex flex-col items-center justify-center">
-      <p className="text-5xl font-semibold w-[80vw] text-white flex items-center justify-center p-5 tracking-wide">
+    <div className="bg-black w-full flex flex-col items-center justify-center">
+      <p className="text-5xl font-semibold w-[80vw] mt-[100px] text-white flex items-center justify-center p-5 tracking-wide">
         Groove On! Savor the
-        <span className="text-LayoutPink ml-2 flex items-center justify-center">Happy Beats</span>
-        <FcMusic color="#BE185D"/>
+        <span className="text-LayoutPink ml-2 flex items-center justify-center">
+          Happy Beats
+        </span>
+        <FcMusic color="#BE185D" />
       </p>
       <div className=" w-full bg-black flex  items-center justify-center">
         <iframe
