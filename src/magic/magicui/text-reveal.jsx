@@ -22,7 +22,7 @@ export const TextRevealByWord = ({ text, className }) => {
         <p
           ref={targetRef}
           className={
-            "flex flex-wrap p-5 text-2xl font-bold text-white  md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-5xl "
+            "flex flex-wrap p-5 justify-center text-center text-2xl font-bold font-Alata text-white  md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-5xl "
           }
         >
           {words.map((word, i) => {
@@ -43,7 +43,7 @@ export const TextRevealByWord = ({ text, className }) => {
 const Word = ({ children, progress, range }) => {
   const opacity = useTransform(progress, range, [0, 1]);
   return (
-    <span className="xl:lg-3 relative mx-1 lg:mx-2. leading-relaxed tracking-wider">
+    <span className="xl:lg-3 relative mx-1 lg:mx-2. leading-normal tracking-wider text-[55px]">
       <span className={"absolute opacity-30"}>{children}</span>
       <motion.span
         style={{ opacity: opacity }}
