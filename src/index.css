@@ -8,6 +8,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  background: #000;
+}
+
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -207,7 +211,7 @@
   .preview-modal {
     position: absolute;
     top: -320px; /* Position above the trigger text, adjust based on modal height */
-    left: 50%;
+    left: 0%;
     transform: translateX(-50%);
     width: 400px; /* Desired width of the modal */
     height: 300px; /* Desired height of the modal */

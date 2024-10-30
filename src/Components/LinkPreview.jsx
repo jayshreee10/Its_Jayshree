@@ -18,7 +18,7 @@ const LinkPreview = ({ text, previewContent, linkUrl }) => {
   return (
     <div className="link-preview-container">
       <strong
-        className="preview-trigger ml-5"
+        className="preview-trigger"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onClick={handleClick}

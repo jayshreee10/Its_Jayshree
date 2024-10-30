@@ -9,22 +9,23 @@ function Home() {
     <div className="relative mt-[70px] flex flex-col items-center justify-center w-full h-screen overflow-hidden bg-black md:shadow-xl">
       <div className="absolute inset-0 dark:from-white dark:to-slate-900/10"></div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center w-full text-center">
-        <div className="md:text-7xl  lg:text-[13vw] sm:text-6xl max-sm:text-4xl max-sm:w-full text-white font-Lobster font-semibold tracking-wider">
-          Jayshree <br /> <span className="ml-[200px]">Sadangi</span>
-          <p
-            className="flex items-center justify-end text-LayoutPink tracking-wide my-28 text-xl font-semibold cursor-pointer font-Alata"
-            onClick={() => {
-              navigate("/about");
-            }}
-          >
-            About Me
-            <span className="ml-2">
-              <FaLongArrowAltRight />
-            </span>{" "}
-          </p>
-        </div>
-      </div>
+      <p className="bg-transparent z-10 lg:text-[14vw] text-white font-Lobster leading-tight font-semibold tracking-wide">
+        {" "}
+        Jayshree <br />{" "}
+        <span className="ml-[200px] bg-transparent">Sadangi</span>
+      </p>
+
+      <p
+        className="flex z-10 items-center justify-center self-end mr-[200px] text-LayoutPink tracking-wide mt-[60px]  text-xl font-semibold cursor-pointer font-Alata"
+        onClick={() => {
+          navigate("/about");
+        }}
+      >
+        About Me
+        <span className="mt-[5px] ml-1">
+          <FaLongArrowAltRight />
+        </span>{" "}
+      </p>
 
       {/* Particles effect for the background */}
       <Particles
