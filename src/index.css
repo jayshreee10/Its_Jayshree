@@ -211,7 +211,7 @@
   .preview-modal {
     position: absolute;
     top: -320px; /* Position above the trigger text, adjust based on modal height */
-    left: 0%;
+    left: 10%;
     transform: translateX(-50%);
     width: 400px; /* Desired width of the modal */
     height: 300px; /* Desired height of the modal */
