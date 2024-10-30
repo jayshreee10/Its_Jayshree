@@ -1,4 +1,3 @@
-import React from "react";
 import { myProfile } from "@/Data/MyData";
 import Timeline from "./Sections/Timeline";
 import jayshree from "../assets/jayshree.jpg";
@@ -10,25 +9,9 @@ function About() {
     technologies: { text: techUse },
   } = myProfile.Aboutus;
 
+  const { frontend } = myProfile;
+
   // Define frontend technologies with icons
-  const frontend = [
-    { name: "ReactJS" },
-    { name: "Typescript" },
-    { name: "JavaScript" },
-    { name: "Redux" },
-    { name: "Tailwind CSS" },
-    { name: "Material UI" },
-    { name: "Bootstrap" },
-    { name: "Next.js" },
-    { name: "Vite" },
-    { name: "Git" },
-    { name: "GitHub" },
-    { name: "HTML" },
-    { name: "Jest" },
-    { name: "Cypress" },
-    { name: "Cypress" },
-    { name: "Cypress" },
-  ];
 
   const { name, title, company } = myProfile;
 
@@ -63,7 +46,7 @@ function About() {
         {frontend.map((tech, index) => (
           <TechItems key={index}>
             <div className="flex gap-2 items-center justify-center">
-              {/* <img src={value.icon} /> */}
+              <img src={tech.icon} className="size-[22px]" />
               {tech.name}
             </div>
           </TechItems>

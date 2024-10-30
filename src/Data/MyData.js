@@ -1,3 +1,14 @@
+import Reacticon from "../assets/React.png";
+import Typescript from "../assets/Typescript.svg";
+import JavaScript from "../assets/JavaScript.svg";
+import Tailwind from "../assets/Tailwind.svg";
+import Html from "../assets/Html.svg";
+import Css from "../assets/CSS.svg";
+import Nodejs from "../assets/Nodejs.svg";
+import MongoDB from "../assets/MongoDB.svg";
+import Figma from "../assets/Figma.svg";
+import Vite from "../assets/Vitejs.svg";
+
 export const myProfile = {
   name: "Jayshree Sadangi",
   title: "Software Developer Intern",
@@ -114,5 +125,23 @@ export const myProfile = {
       category: "Frontend Development",
       description: "Wallpaper app using Pexel API for stunning visuals.",
     },
+  ],
+  frontend: [
+    { name: "ReactJS", icon: Reacticon },
+    { name: "Typescript", icon: Typescript },
+    { name: "JavaScript", icon: JavaScript },
+    { name: "Node", icon: Nodejs },
+    { name: "MongoDB", icon: MongoDB },
+    { name: "Express", icon: "" },
+    { name: "Tailwind CSS", icon: Tailwind },
+    { name: "Figma", icon: Figma },
+    { name: "Material UI" },
+    { name: "Bootstrap" },
+    { name: "Next.js" },
+    { name: "Git" },
+    { name: "GitHub" },
+    { name: "Vite", icon: Vite },
+    { name: "HTML", icon: Html },
+    { name: "CSS", icon: Css },
   ],
 };
