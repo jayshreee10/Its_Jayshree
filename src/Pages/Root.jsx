@@ -14,7 +14,6 @@ function Root() {
       {/* <Button text="ABOUT ME" onClick={() => navigate("/about")} /> */}
       <Passion />
       <Projects />
-      <div></div>
       <Blog />
       {/* <Spotify />  */}
     </div>

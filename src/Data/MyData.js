@@ -8,6 +8,12 @@ import Nodejs from "../assets/Nodejs.svg";
 import MongoDB from "../assets/MongoDB.svg";
 import Figma from "../assets/Figma.svg";
 import Vite from "../assets/Vitejs.svg";
+import Lighthouse from "../assets/lighthouse.svg";
+import Git from "../assets/Git.svg";
+import github from "../assets/github.svg";
+import Express from "../assets/Express.svg";
+import MUI from "../assets/MUI.svg";
+import Recoil from "../assets/Recoil.svg";
 
 export const myProfile = {
   name: "Jayshree Sadangi",
@@ -53,11 +59,18 @@ export const myProfile = {
   Timeline: [
     {
       year: "June 2024 - Current",
-      position: ["Softwre Developer Intern @Embrays Technologies , Bangalore"],
+      position: [
+        "Softwre Developer Intern @Embrays Technologies , Bangalore",
+        "Worked on more than 10 client projects on both Frontend and Backend",
+      ],
     },
     {
       year: "Nov 2023 – Jan 2024",
-      position: ["Freelancer @Neophyte Ambient Intelligence , Navi Mumbai"],
+      position: [
+        "Freelancer @Neophyte Ambient Intelligence , Navi Mumbai",
+        "Worked on 2 internal projects including designing and frontend development",
+        "Contributed significantly to design processes, utilizing tools like Figma and Canva.",
+      ],
     },
 
     {
@@ -132,14 +145,14 @@ export const myProfile = {
     { name: "JavaScript", icon: JavaScript },
     { name: "Node", icon: Nodejs },
     { name: "MongoDB", icon: MongoDB },
-    { name: "Express", icon: "" },
+    { name: "Express", icon: Express },
     { name: "Tailwind CSS", icon: Tailwind },
     { name: "Figma", icon: Figma },
-    { name: "Material UI" },
-    { name: "Bootstrap" },
-    { name: "Next.js" },
-    { name: "Git" },
-    { name: "GitHub" },
+    { name: "Material UI", icon: MUI },
+    { name: "Recoil", icon: Recoil },
+    { name: "Lighthouse", icon: Lighthouse },
+    { name: "Git", icon: Git },
+    { name: "GitHub", icon: github },
     { name: "Vite", icon: Vite },
     { name: "HTML", icon: Html },
     { name: "CSS", icon: Css },

@@ -7,6 +7,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './custom.css'; /* Import custom CSS */
 
 *{
   background: #000;
@@ -70,12 +71,12 @@
   background: linear-gradient(
     45deg,
     #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
+    /* #ff7300,
+    #fffb00, */
+    /* #48ff00,
+    #00ffd5, */
+    /* #002bff,
+    #7a00ff, */
     #ff00c8,
     #ff0000
   );
@@ -100,8 +101,8 @@
 .connect_button:active:after {
   background: transparent;
 }
-
-.connect_button:hover:before {
+/* hover */
+.connect_button:before {  
   opacity: 1;
 }
 
@@ -237,3 +238,15 @@
     transform: translateX(-50%) translateY(0); /* Animation effect */
   }
   
+
+/* custom.css */
+@layer utilities {
+  .skill-gradient {
+    @apply bg-gradient-to-r from-[#BE185D] via-[#db5e8e] to-white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+

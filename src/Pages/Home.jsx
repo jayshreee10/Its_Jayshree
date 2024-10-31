@@ -15,7 +15,7 @@ function Home() {
         <span className="ml-[200px] bg-transparent">Sadangi</span>
       </p>
 
-      <p
+      {/* <p
         className="flex z-10 items-center justify-center self-end mr-[200px] text-LayoutPink tracking-wide mt-[60px]  text-xl font-semibold cursor-pointer font-Alata"
         onClick={() => {
           navigate("/about");
@@ -25,7 +25,7 @@ function Home() {
         <span className="mt-[5px] ml-1">
           <FaLongArrowAltRight />
         </span>{" "}
-      </p>
+      </p> */}
 
       {/* Particles effect for the background */}
       <Particles
