@@ -10,4 +10,23 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+  <script type="module">
+  
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+   
+    const firebaseConfig = {
+      apiKey: "AIzaSyBNA4lC6CZZExIQv7MlKPMRaBNDppwhxIA",
+      authDomain: "portfolio-6203a.firebaseapp.com",
+      projectId: "portfolio-6203a",
+      storageBucket: "portfolio-6203a.firebasestorage.app",
+      messagingSenderId: "602736169972",
+      appId: "1:602736169972:web:10335a7f77683195799fa1",
+      measurementId: "G-GSZEKJG62D"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </html>
