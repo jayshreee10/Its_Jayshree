@@ -27,23 +27,20 @@ export const myProfile = {
   },
 
   Passion:
-    "Hi, I am Jayshree a multifaceted professional encompassing roles as a Web Developer ,  Educator, Student, and Food Blogger . I am frequently immersed in my work at my desk . Please explore all sections of my portfolio to gain a comprehensive understanding of my expertise. Do feel free to leave me a note in the Guestbook",
-
+    "Hi👋 I am a full-stack developer from India, currently interning at Embrays Technologies. I specialize in the MERN stack i.e MongoDB, Express.js, React, Node.js and have strong design skills. In addition to coding, I enjoy writing articles. Feel free to explore all the sections my portfolio😃.",
+  // My passion for development keeps me engaged and focused at my desk, constantly exploring innovative solutions.
   posts: [
     {
       postTitle: "Exploring the Latest Trends in Web Development",
       postDescription:
         "An in-depth look at the current trends shaping the future of web development.",
+      postimg: github,
     },
     {
       postTitle: "How to Balance Multiple Roles Successfully",
       postDescription:
         "Tips and strategies for managing various professional roles effectively.",
-    },
-    {
-      postTitle: "The Intersection of Technology and Creativity",
-      postDescription:
-        "Examining how technology can enhance creative processes in various fields.",
+      postimg: MongoDB,
     },
   ],
 
@@ -156,5 +153,17 @@ export const myProfile = {
     { name: "Vite", icon: Vite },
     { name: "HTML", icon: Html },
     { name: "CSS", icon: Css },
+  ],
+
+  projectItems: [
+    // "Proficient in the MERN stack and modern frontend frameworks, especially React.js.",
+    "Completed over 10 client projects at Embrays Technologies, working across both frontend and backend.",
+    "Developed 30+ projects, showcasing a diverse range of skills and technologies.",
+    // "Implemented CI/CD pipelines to streamline deployment and improve project delivery.",
+    "Optimized website performance, enhancing Core Web Vitals and improving scores from upto 100%.",
+    "Certified in frontend development and assessed in TCS NQT and Amcat for technical proficiency.",
+    // "Integrated complex API functionalities, including REST and GraphQL, to create dynamic, data-driven apps.",
+    "Worked on protected routes, JWT authentication, and custom state management solutions.",
+    "Enhanced project features with tools such as Firebase, Netlify, and Chrome DevTools for efficient development.",
   ],
 };
