@@ -1,3 +1,2 @@
 ## Jayshree's Portfolio website 
-
-### under development 🛠️
+### ![Under Development](https://img.shields.io/badge/Under%20Development-red) 🛠️
