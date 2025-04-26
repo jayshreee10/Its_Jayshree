@@ -1,0 +1,110 @@
+---
+title: 'Understanding Spree Concepts: Decorators, Overriders, Serializers, and More'
+publishedAt: '2025-04-02'
+summary: 'A comprehensive guide to core Spree concepts like decorators, overriders, serializers, and other key components.'
+---
+
+### Introduction
+
+Spree Commerce is a flexible and powerful e-commerce framework built with Ruby on Rails. To efficiently work with Spree, it is essential to understand some core concepts, including decorators, overriders, serializers, services, commands, presenters, and more. In this article, we will explore these concepts, their roles, and best practices for using them.
+
+### Decorators
+
+Decorators in Spree allow you to extend or modify the functionality of existing classes without directly altering the original codebase. This makes it easier to update the platform without losing customizations.
+
+#### Why Use Decorators?
+
+- Keep customizations separate from core code.
+- Maintain easy updates and upgrades.
+- Follow the DRY (Don't Repeat Yourself) principle.
+
+#### Example:
+
+```ruby
+# app/models/spree/product_decorator.rb
+module Spree::ProductDecorator
+  def self.prepended(base)
+    base.scope :available, -> { where(available: true) }
+  end
+end
+
+Spree::Product.prepend Spree::ProductDecorator
+```
+
+### Overriders
+
+Overriders in Spree are used to change the behavior of methods or classes. You typically use them to replace or change the logic of a method in Spree's core functionality.
+
+#### Example:
+
+```ruby
+Spree::Order.class_eval do
+  def finalize!
+    super
+    update(completed_at: Time.current)
+  end
+end
+```
+
+### Serializers
+
+Serializers in Spree format data for API responses. They allow you to control which attributes are exposed in JSON responses.
+
+#### Example:
+
+```ruby
+# app/serializers/spree/product_serializer.rb
+class Spree::ProductSerializer < ActiveModel::Serializer
+  attributes :id, :name, :price
+end
+```
+
+### Services
+
+Services in Spree are used for complex business logic that doesn't fit within a model or controller. They help maintain a clean and modular codebase.
+
+#### Example:
+
+```ruby
+class Spree::OrderCompletionService
+  def call(order)
+    order.update(state: 'complete')
+  end
+end
+```
+
+### Commands
+
+Commands encapsulate business logic in a single object. They are useful for keeping code organized and easy to test.
+
+#### Example:
+
+```ruby
+class Spree::Order::CancelCommand
+  def call(order)
+    order.update(state: 'canceled')
+  end
+end
+```
+
+### Presenters
+
+Presenters in Spree are used to format and display data, often for views. They help keep presentation logic separate from models.
+
+#### Example:
+
+```ruby
+class Spree::ProductPresenter
+  def initialize(product)
+    @product = product
+  end
+
+  def formatted_price
+    "$#{@product.price}"
+  end
+end
+```
+
+### Final Thoughts
+
+Understanding Spree concepts like decorators, overriders, serializers, services, commands, and presenters is crucial for customizing and maintaining your Spree Commerce platform. By leveraging these components effectively, you can build a robust and maintainable e-commerce application. For more in-depth tutorials, stay tuned!

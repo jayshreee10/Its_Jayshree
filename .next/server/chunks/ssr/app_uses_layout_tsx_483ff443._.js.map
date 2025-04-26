@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/jayshreesadangi/Projects/Personal%20Projects/Portfolio/app/uses/layout.tsx"],"sourcesContent":["import { ReactNode } from 'react';\nimport SectionContainer from '../components/layouts/section-container';\n\nexport default function Layout({ children }: { children: ReactNode }) {\n  return <SectionContainer>{children}</SectionContainer>;\n}\n"],"names":[],"mappings":";;;;AACA;;;AAEe,SAAS,OAAO,EAAE,QAAQ,EAA2B;IAClE,qBAAO,8OAAC,qJAAA,CAAA,UAAgB;kBAAE;;;;;;AAC5B","debugId":null}}]
+}

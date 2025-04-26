@@ -1,0 +1,101 @@
+---
+title: 'Understanding Spree PostgreSQL Tables'
+publishedAt: '2025-04-02'
+summary: 'An in-depth guide to Spree Commerce PostgreSQL tables and their roles in an e-commerce setup.'
+---
+
+### Introduction
+
+Spree Commerce utilizes PostgreSQL as its database, which consists of numerous tables that manage different aspects of the e-commerce platform. Understanding these tables is crucial for effectively managing orders, products, payments, shipping, and more. In this article, we will explore the primary Spree tables and their functions.
+
+### Orders and Checkout Tables
+
+- **spree_orders:** Stores order details, including user info, order state, total amounts, and timestamps.
+- **spree_line_items:** Represents individual items within an order, including quantity, price, and associations to products and variants.
+- **spree_cartons:** Manages package details once an order is shipped.
+- **spree_adjustments:** Tracks additional costs or discounts (like taxes or promotions) applied to orders.
+- **spree_assets:** Manages media assets associated with products or other resources.
+- **spree_calculators:** Stores custom calculation logic for shipping, promotions, or taxes.
+- **spree_checks:** Tracks checks related to payment verification or other processes.
+- **spree_orders:** Stores order details, including user info, order state, total amounts, and timestamps.
+- **spree_line_items:** Represents individual items within an order, including quantity, price, and associations to products and variants.
+- **spree_cartons:** Manages package details once an order is shipped.
+- **spree_adjustments:** Tracks additional costs or discounts (like taxes or promotions) applied to orders.
+
+### Product and Inventory Tables
+
+- **spree_products:** Contains product details such as name, description, and slug.
+- **spree_variants:** Stores variations of a product (like size or color).
+- **spree_stock_items:** Manages inventory for each product variant.
+- **spree_stock_locations:** Defines where the inventory is stored (warehouses or stores).
+- **spree_prices:** Manages pricing for product variants.
+- **spree_option_types and spree_option_values:** Defines product options (like size or color).
+- **spree_product_properties:** Holds custom properties for products.
+- **spree_products:** Contains product details such as name, description, and slug.
+- **spree_variants:** Stores variations of a product (like size or color).
+- **spree_stock_items:** Manages inventory for each product variant.
+- **spree_stock_locations:** Defines where the inventory is stored (warehouses or stores).
+- **spree_prices:** Manages pricing for product variants.
+
+### User and Customer Tables
+
+- **spree_users:** Stores customer account details.
+- **spree_addresses:** Holds billing and shipping addresses linked to users and orders.
+
+### Payment and Transaction Tables
+
+- **spree_payments:** Contains transaction details, including payment method, amount, and state.
+- **spree_payment_sources:** Stores reusable payment data (like credit card info).
+- **spree_payment_methods:** Defines available payment options.
+- **spree_payment_capture_events:** Records the capture of payments, especially useful for delayed payment processing.
+- **spree_store_credit_categories:** Manages types of store credits (like gift cards or refunds).
+- **spree_payments:** Contains transaction details, including payment method, amount, and state.
+- **spree_payment_sources:** Stores reusable payment data (like credit card info).
+- **spree_payment_methods:** Defines available payment options.
+- **spree_payment_capture_events:** Records the capture of payments, especially useful for delayed payment processing.
+
+### Shipping and Delivery Tables
+
+- **spree_zones:** Defines geographical areas used for tax and shipping calculations.
+- **spree_zone_members:** Associates specific locations (like countries or states) with a zone.
+- **spree_shipping_categories:** Categorizes types of products for shipping purposes.
+- **spree_shipments:** Details about how an order is shipped, including tracking numbers and state.
+- **spree_shipping_methods:** Stores available shipping options.
+- **spree_shipping_rates:** Contains shipping cost data linked to methods and zones.
+- **spree_calculators:** Stores shipping calculation logic.
+- **spree_zones:** Defines geographical areas used for tax and shipping calculations.
+- **spree_zone_members:** Associates specific locations (like countries or states) with a zone.
+- **spree_shipping_categories:** Categorizes types of products for shipping purposes.
+- **spree_shipments:** Details about how an order is shipped, including tracking numbers and state.
+- **spree_shipping_methods:** Stores available shipping options.
+- **spree_shipping_rates:** Contains shipping cost data linked to methods and zones.
+
+### Tax and Promotion Tables
+
+- **spree_taxonomies and spree_taxons:** Used for categorizing products.
+- **spree_tax_rates:** Manages applicable tax rates.
+- **spree_promotions:** Tracks promotions and their rules.
+- **spree_promotion_rules:** Defines conditions for promotions.
+- **spree_promotion_actions:** Details the actions triggered by promotions (e.g., discounts).
+
+### Configuration and Settings Tables
+
+- **spree_preferences:** Stores various configuration settings.
+- **spree_assets:** Manages media and file assets related to products or other entities.
+- **spree_preferences:** Stores various configuration settings.
+- **spree_store_credit_categories:** Manages types of store credits (like gift cards or refunds).
+
+### Logging and Audit Tables
+
+- **spree_log_entries:** Records events related to orders or transactions.
+- **spree_state_changes:** Tracks changes in the state of orders, payments, and shipments.
+
+### Associations and Linking Tables
+
+- **spree_order_promotions:** Links orders with applied promotions.
+- **spree_product_properties:** Holds custom properties for products.
+- **spree_option_types and spree_option_values:** Defines product options (like size or color).
+
+### Conclusion
+
+Understanding these tables helps in effectively managing the Spree Commerce backend. Whether handling orders, payments, or shipping, each table plays a crucial role in the smooth functioning of the platform. If you have any questions or need further assistance, feel free to reach out!

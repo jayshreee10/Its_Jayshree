@@ -1,95 +1,240 @@
-// tailwind.config.js
+import colors from 'tailwindcss/colors';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"], // enables dark mode based on a CSS class
-  content: [
-    "./pages/**/*.{js,jsx}",
-    "./components/**/*.{js,jsx}",
-    "./app/**/*.{js,jsx}",
-    "./src/**/*.{js,jsx}",
-  ], // directories Tailwind should scan for class usage
-  prefix: "",
+  mode: 'jit',
+  content: ['./app/**/*.tsx', './components/**/*.tsx', './layouts/**/*.tsx', './lib/**/*.ts'],
+  darkMode: 'class',
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
+      spacing: {
+        '9/16': '56.25%',
+        0.75: '0.1875rem',
+        'content-sm': 'calc(100vh - 4.5rem)',
+        content: 'calc(100vh - 4rem)',
+      },
+      lineHeight: {
+        11: '2.75rem',
+        12: '3rem',
+        13: '3.25rem',
+        14: '3.5rem',
+      },
+      letterSpacing: {
+        tightest: '-.075em',
+      },
+      fontSize: {
+        '8.5xl': '7rem',
+      },
       fontFamily: {
-        Alice: ["Alice", "serif"],
-        Lobster: ["Lobster Two", "sans-serif"],
-        Alata: ["Alata", "sans-serif"],
-        Rubik: ["Rubik", "sans-serif"],
-        Mukta: ["Mukta", "sans-serif"],
+        sans: [...defaultTheme.fontFamily.sans],
+      },
+      gradientColorStops: {
+        'gradient-1-start': '#F20089',
+        'gradient-1-end': '#D100D1',
+        'gradient-2-start': '#D100D1',
+        'gradient-2-end': '#A100F2',
+        'gradient-3-start': '#A100F2',
+        'gradient-3-end': '#2D00F7',
       },
       colors: {
-        LayoutBlue: "#111827",
-        LayoutLinkedin: "#005E93",
-        LayoutMessage: "#2E7546",
-        Button: "#11243C",
-        LayoutPink: "#BE185D",
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          100: '#FDD1D9',
+          200: '#FBA4BC',
+          300: '#F575A5',
+          400: '#EB519B',
+          500: '#DE1D8D',
+          600: '#BE1588',
+          700: '#9F0E7F',
+          800: '#800972',
+          900: '#6A0568',
         },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+        success: {
+          100: '#E4FCDB',
+          200: '#C3FAB9',
+          300: '#99F193',
+          400: '#74E377',
+          500: '#49D159',
+          600: '#35B34F',
+          700: '#249647',
+          800: '#17793D',
+          900: '#0E6437',
         },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+        info: {
+          100: '#CCFCFF',
+          200: '#99F2FF',
+          300: '#66E2FF',
+          400: '#3FCEFF',
+          500: '#00AEFF',
+          600: '#0087DB',
+          700: '#0065B7',
+          800: '#004793',
+          900: '#00337A',
         },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+        warning: {
+          100: '#FEF1CF',
+          200: '#FDE09F',
+          300: '#FBC96F',
+          400: '#F8B24B',
+          500: '#F48E11',
+          600: '#D1700C',
+          700: '#AF5508',
+          800: '#8D3D05',
+          900: '#752D03',
         },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+        danger: {
+          100: '#FFDCD3',
+          200: '#FFB1A8',
+          300: '#FF7D7C',
+          400: '#FF5C6A',
+          500: '#FF264D',
+          600: '#DB1B50',
+          700: '#B7134F',
+          800: '#930C4A',
+          900: '#7A0747',
         },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+        'spotify-green': '#1DB954',
+        green: colors.emerald,
+        yellow: colors.amber,
+        purple: colors.violet,
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.gray.700'),
+            a: {
+              color: theme('colors.gray.700'),
+              '&:hover': {
+                color: theme('colors.gray.700'),
+              },
+              code: { color: theme('colors.primary.400') },
+            },
+            h1: {
+              fontWeight: '700',
+              letterSpacing: theme('letterSpacing.tight'),
+              color: theme('colors.gray.900'),
+            },
+            h2: {
+              fontWeight: '700',
+              letterSpacing: theme('letterSpacing.tight'),
+              color: theme('colors.gray.900'),
+            },
+            h3: {
+              fontWeight: '600',
+              color: theme('colors.gray.900'),
+            },
+            'h4,h5,h6': {
+              color: theme('colors.gray.900'),
+            },
+            code: {
+              color: theme('colors.green.500'),
+              backgroundColor: theme('colors.gray.100'),
+              paddingLeft: '4px',
+              paddingRight: '4px',
+              paddingTop: '2px',
+              paddingBottom: '2px',
+              borderRadius: '0.25rem',
+            },
+            'code:before': {
+              content: 'none',
+            },
+            'code:after': {
+              content: 'none',
+            },
+            hr: { borderColor: theme('colors.gray.200') },
+            'ol li:before': {
+              fontWeight: '600',
+              color: theme('colors.gray.500'),
+            },
+            'ul li:before': {
+              backgroundColor: theme('colors.gray.500'),
+            },
+            'ul li > :last-child': {
+              margin: 0,
+            },
+            'ul li > :first-child': {
+              margin: 0,
+            },
+            strong: { color: theme('colors.gray.600') },
+            blockquote: {
+              color: theme('colors.gray.900'),
+              borderLeftColor: theme('colors.gray.200'),
+            },
+          },
+        },
+        dark: {
+          css: {
+            color: theme('colors.gray.300'),
+            a: {
+              color: theme('colors.gray.300'),
+              '&:hover': {
+                color: theme('colors.gray.300'),
+              },
+              code: { color: theme('colors.primary.400') },
+            },
+            h1: {
+              fontWeight: '700',
+              letterSpacing: theme('letterSpacing.tight'),
+              color: theme('colors.gray.100'),
+            },
+            h2: {
+              fontWeight: '700',
+              letterSpacing: theme('letterSpacing.tight'),
+              color: theme('colors.gray.100'),
+            },
+            h3: {
+              fontWeight: '600',
+              color: theme('colors.gray.100'),
+            },
+            'h4,h5,h6': {
+              color: theme('colors.gray.100'),
+            },
+            code: {
+              backgroundColor: theme('colors.gray.800'),
+            },
+            hr: { borderColor: theme('colors.gray.700') },
+            'ol li:before': {
+              fontWeight: '600',
+              color: theme('colors.gray.400'),
+            },
+            'ul li:before': {
+              backgroundColor: theme('colors.gray.400'),
+            },
+            'ul li > :last-child': {
+              margin: 0,
+            },
+            'ul li > :first-child': {
+              margin: 0,
+            },
+            strong: { color: theme('colors.gray.100') },
+            thead: {
+              color: theme('colors.gray.100'),
+            },
+            tbody: {
+              tr: {
+                borderBottomColor: theme('colors.gray.700'),
+              },
+            },
+            blockquote: {
+              color: theme('colors.gray.100'),
+              borderLeftColor: theme('colors.gray.700'),
+            },
+          },
+        },
+      }),
       keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+        shimmer: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '100%': { backgroundPosition: '100% 50%' },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
-      backgroundImage: {
-        "text-gradient":
-          "linear-gradient(to right, #A80077 0%, #C146A1 50%, #FFFFFF 51%, #DB36A4 100%)",
+        shimmer: 'shimmer 5s linear infinite',
       },
     },
   },
-  plugins: [require("tailwindcss-animate")], // enable additional plugins
+  variants: {
+    extend: {
+      backgroundClip: ['text'],
+    },
+  },
 };
