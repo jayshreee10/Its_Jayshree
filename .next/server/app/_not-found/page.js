@@ -1,0 +1,18 @@
+const CHUNK_PUBLIC_PATH = "server/app/_not-found/page.js";
+const runtime = require("../../chunks/ssr/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_36bb0a82._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__97e0e1e6._.js");
+runtime.loadChunk("server/chunks/ssr/app_0a91cb44._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_ai_index_mjs_0fb512c6._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_fa_index_mjs_a1beb003._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_si_index_mjs_dd28d936._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_fa6_index_mjs_d21d9af8._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_lib_b806b5fe._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_b02177c9._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__499a7b64._.js");
+runtime.loadChunk("server/chunks/ssr/app_not-found_tsx_1b0458ea._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_b04db032._.js");
+runtime.loadChunk("server/chunks/ssr/_80012b55._.js");
+runtime.getOrInstantiateRuntimeModule("[project]/.next-internal/server/app/_not-found/page/actions.js [app-rsc] (server actions loader, ecmascript)", CHUNK_PUBLIC_PATH);
+runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/_not-found/page { METADATA_0 => \"[project]/app/opengraph-image.png.mjs { IMAGE => \\\"[project]/app/opengraph-image.png (static in ecmascript)\\\" } [app-rsc] (structured image object, ecmascript, Next.js server component)\", MODULE_1 => \"[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js server component)\", MODULE_2 => \"[project]/app/not-found.tsx [app-rsc] (ecmascript, Next.js server component)\", MODULE_3 => \"[project]/node_modules/next/dist/client/components/forbidden-error.js [app-rsc] (ecmascript, Next.js server component)\", MODULE_4 => \"[project]/node_modules/next/dist/client/components/unauthorized-error.js [app-rsc] (ecmascript, Next.js server component)\", MODULE_5 => \"[project]/app/not-found.tsx [app-rsc] (ecmascript, Next.js server component)\" } [app-rsc] (ecmascript)", CHUNK_PUBLIC_PATH);
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/_not-found/page { METADATA_0 => \"[project]/app/opengraph-image.png.mjs { IMAGE => \\\"[project]/app/opengraph-image.png (static in ecmascript)\\\" } [app-rsc] (structured image object, ecmascript, Next.js server component)\", MODULE_1 => \"[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js server component)\", MODULE_2 => \"[project]/app/not-found.tsx [app-rsc] (ecmascript, Next.js server component)\", MODULE_3 => \"[project]/node_modules/next/dist/client/components/forbidden-error.js [app-rsc] (ecmascript, Next.js server component)\", MODULE_4 => \"[project]/node_modules/next/dist/client/components/unauthorized-error.js [app-rsc] (ecmascript, Next.js server component)\", MODULE_5 => \"[project]/app/not-found.tsx [app-rsc] (ecmascript, Next.js server component)\" } [app-rsc] (ecmascript)", CHUNK_PUBLIC_PATH).exports;

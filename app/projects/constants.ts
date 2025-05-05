@@ -3,38 +3,38 @@ import { Project } from './types';
 export const projects: Project[] = [
   {
     title: 'MentorLab',
-    src: 'planner-app.webp',
+    src: 'aphex-apps.webp',
     color: '#dbeafe',
-    url: 'https://app.aphex.co/',
-    role: 'Fullstack Developer',
+    url: 'https://mentorlab.jayshree.tech/',
+    role: 'Fullstack Development',
   },
-  {
-    title: 'TaskNest',
-    src: 'field-app.webp',
-    color: '#ddd6fe',
-    url: 'https://app.aphex.co/',
-    role: 'Fullstack Developer',
-  },
+  // {
+  //   title: 'TaskNest',
+  //   src: 'field-app.webp',
+  //   color: '#ddd6fe',
+  //   url: 'https://app.aphex.co/',
+  //   role: 'Fullstack Developer',
+  // },
   {
     title: 'Compliant Labs',
     src: 'topo.webp',
     color: '#dbeafe',
     url: 'https://compliantlabs.ai/',
-    role: 'Fullstack Developer',
+    role: 'Fullstack Development',
   },
   {
     title: 'Compiler Tech',
     src: 'publication-app.webp',
     color: '#fae8ff',
     url: 'https://compilertech.org/',
-    role: 'Frontend Developer',
+    role: 'Frontend Development',
   },
   {
     title: 'Global Konnect',
     src: 'spoken.webp',
     color: '#fee2e2',
     url: 'https://globalkonnect.co/',
-    role: 'Frontend Developer',
+    role: 'Frontend Development',
   },
  
   // {

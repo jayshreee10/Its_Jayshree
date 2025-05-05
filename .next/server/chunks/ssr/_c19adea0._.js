@@ -522,32 +522,41 @@ const workTiles = [
         description: `Here are things`,
         title: `I've worked on`,
         image: {
-            src: '/static/images/aphex-apps.webp',
+            src: '/static/images/mentorlab.webp',
             width: 600,
             height: 770
         }
     },
     {
         description: 'I built',
-        title: 'Aphex Field',
+        title: 'MentorLab',
         image: {
-            src: '/static/images/field-app.webp',
+            src: '/static/images/mentorlab.webp',
             width: 600,
             height: 554
         }
     },
     {
         description: `I maintained`,
-        title: 'Aphex Planner',
+        title: 'Compiler Tech',
         image: {
-            src: '/static/images/planner-app.webp',
+            src: '/static/images/compilertech.webp',
             width: 600,
             height: 717
         }
     },
     {
         description: `I built`,
-        title: 'Aphex Publication',
+        title: 'Task nest',
+        image: {
+            src: '/static/images/publication-app.webp',
+            width: 600,
+            height: 717
+        }
+    },
+    {
+        description: `I built`,
+        title: 'Global Konnect',
         image: {
             src: '/static/images/publication-app.webp',
             width: 600,
