@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import { Suspense } from 'react';
+// import { Suspense } from 'react';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { FaGithub, FaSpotify } from 'react-icons/fa';
 import { SiHashnode } from 'react-icons/si';
 import { FaXTwitter } from 'react-icons/fa6';
 import { siteMetadata } from '../metadata';
-import NowPlaying from '../spotify/now-playing';
+// import NowPlaying from '../spotify/now-playing';
 import SectionContainer from './section-container';
 
 export default function Footer() {
