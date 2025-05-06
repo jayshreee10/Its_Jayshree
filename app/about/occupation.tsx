@@ -9,7 +9,7 @@ export default function Occupation() {
       </div>
       <div>
         <Image
-          alt="Dale Larroder"
+          alt="Jayshree Sadangi"
           height={130}
           width={130}
           src="/static/images/avatar.webp"
