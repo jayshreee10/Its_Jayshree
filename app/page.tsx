@@ -1,4 +1,4 @@
-import Contact from 'app/components/contact';
+// import Contact from 'app/components/contact';
 import Hero from 'app/components/hero/hero';
 import Intro from 'app/components/intro';
 import { ScrollProvider } from 'app/components/providers/ScrollProvider';
