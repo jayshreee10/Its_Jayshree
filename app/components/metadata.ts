@@ -1,0 +1,21 @@
+export const siteMetadata = {
+  title: 'Jayshree Sadangi',
+  author: 'Jayshree Sadangi',
+  headerTitle: 'jayshree.dev',
+  description: 'Software Developer at HyScaler',
+  language: 'en-us',
+  theme: 'dark', // system, dark or light
+  siteUrl: 'https://jayshree.dev',
+  siteRepo: 'https://github.com/dlarroder/dalelarroder-blog',
+  siteLogo: '/static/images/logo.png',
+  image: '/static/images/avatar.webp',
+  socialBanner: '/static/images/twitter-card.png',
+  email: 'jayashreesadangi000@gmail.com',
+  github: 'https://github.com/jayshreee10',
+  twitter: 'https://x.com/SadangiJayshre',
+  facebook: 'https://facebook.com/dlarroder',
+  linkedin: 'https://www.linkedin.com/in/jayshree-sadangi/',
+  spotify: 'https://open.spotify.com/user/cj97pf1kuwcm8xc8s6qaz458t',
+  hashnode: 'https://jayce10.hashnode.dev/',
+  locale: 'en-US',
+};
