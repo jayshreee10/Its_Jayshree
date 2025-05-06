@@ -13,43 +13,43 @@ export const workTiles: WorkTile[] = [
     description: `Here are things`,
     title: `I've worked on`,
     image: {
-      src: '/static/images/mentorlab.webp',
+      src: '/static/images/main.webp',
       width: 600,
       height: 770,
     },
   },
-  {
-    description: 'I built',
-    title: 'MentorLab',
-    image: {
-      src: '/static/images/mentorlab.webp',
-      width: 600,
-      height: 554,
-    },
-  },
+  // {
+  //   description: 'I built',
+  //   title: 'MentorLab',
+  //   image: {
+  //     src: '/static/images/mentorlab.webp',
+  //     width: 600,
+  //     height: 554,
+  //   },
+  // },
   {
     description: `I maintained`,
-    title: 'Compiler Tech',
+    title: 'Compliant Labs',
     image: {
-      src: '/static/images/compilertech.webp',
+      src: '/static/images/cl.webp',
       width: 600,
-      height: 717,
-    },
-  },
-  {
-    description: `I built`,
-    title: 'Task nest',
-    image: {
-      src: '/static/images/publication-app.webp',
-      width: 600,
-      height: 717,
+      height: 517,
     },
   },
   {
     description: `I built`,
     title: 'Global Konnect',
     image: {
-      src: '/static/images/publication-app.webp',
+      src: '/static/images/gk.webp',
+      width: 600,
+      height: 717,
+    },
+  },
+  {
+    description: `I built`,
+    title: 'Borluittea',
+    image: {
+      src: '/static/images/borluittea.webp',
       width: 600,
       height: 717,
     },

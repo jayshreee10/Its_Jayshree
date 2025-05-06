@@ -10,7 +10,7 @@ export default function Page() {
       <Hero />
       <Intro />
       <Works />
-      <Contact />
+      {/* <Contact /> */}
     </ScrollProvider>
   );
 }

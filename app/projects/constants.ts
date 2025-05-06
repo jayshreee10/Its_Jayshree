@@ -3,7 +3,7 @@ import { Project } from './types';
 export const projects: Project[] = [
   {
     title: 'MentorLab',
-    src: 'aphex-apps.webp',
+    src: 'mentorlab.webp',
     color: '#dbeafe',
     url: 'https://mentorlab.jayshree.tech/',
     role: 'Fullstack Development',
@@ -17,23 +17,23 @@ export const projects: Project[] = [
   // },
   {
     title: 'Compliant Labs',
-    src: 'topo.webp',
+    src: 'compliantlabs.webp',
     color: '#dbeafe',
     url: 'https://compliantlabs.ai/',
     role: 'Fullstack Development',
   },
   {
     title: 'Compiler Tech',
-    src: 'publication-app.webp',
+    src: 'ct.webp',
     color: '#fae8ff',
     url: 'https://compilertech.org/',
     role: 'Frontend Development',
   },
   {
-    title: 'Global Konnect',
-    src: 'spoken.webp',
+    title: 'Borluittea',
+    src: 'borluittea.webp',
     color: '#fee2e2',
-    url: 'https://globalkonnect.co/',
+    url: 'https://borluittea.com/',
     role: 'Frontend Development',
   },
  
