@@ -101,13 +101,7 @@ export default function ProjectPreview({ modal, projects }: ProjectModalProps) {
                 style={{ backgroundColor: color }}
                 key={`modal_${index}`}
               >
-                <Image
-                  className="h-auto"
-                  src={`/static/images/project/${src}`}
-                  width={300}
-                  height={300}
-                  alt="image"
-                />
+                <Image className="h-auto" src={src} width={300} height={300} alt="image" />
               </div>
             );
           })}
